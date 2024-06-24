@@ -4,6 +4,14 @@ import Link from 'next/link';
 import style from './ui/home.module.css'
 import { lusitana } from './ui/fonts'
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+   title:{
+      template: '%s | Acme',
+      default: 'Acme'
+   },
+}
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
